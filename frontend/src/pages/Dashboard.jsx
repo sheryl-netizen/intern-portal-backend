@@ -6,7 +6,7 @@ export default function Dashboard() {
   const [user, setUser] = useState(null);
 
   useEffect(() => {
-    axios.get("http://localhost:5000/api/user")
+    axios.get("https://intern-portal-backend-2sel.onrender.com/api/user")
       .then((res) => setUser(res.data))
       .catch((err) => console.error("Failed to fetch user data:", err));
   }, []);
